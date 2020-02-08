@@ -19,6 +19,7 @@
 
 		html, body{
 			margin: 0;
+			font-family: sans-serif;
 		}
 
 		.message-wrapper{
@@ -33,6 +34,7 @@
 			z-index: 100;
 			color: white;
 			background: rgba(0,0,0,0.6);
+			flex-direction: column;
 		}
 
 		h1{
@@ -43,6 +45,18 @@
 			line-height: 1.3em;
 		}
 
+		.message-wrapper p{
+			color: white;
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+		}
+
+		.message-wrapper p a{
+			color: white;
+			text-decoration: underline;
+		}
+
 	</style>
 </head>
 <body>
@@ -50,7 +64,7 @@
 	<div class="video-wrapper">
 		<div style="position: fixed; z-index: -99; width: 100%; height: 100%; transform: scale(2);">
 		  <iframe frameborder="0" height="100%" width="100%"
-		    src="https://youtube.com/embed/zbu-fVXP5nI?autoplay=1">
+		    src="https://youtube.com/embed/zbu-fVXP5nI?autoplay=1&loop=1&playlist=zbu-fVXP5nI">
 		  </iframe>
 		</div>
 	</div>
@@ -58,6 +72,8 @@
 	<div class="message-wrapper">
 		
 		<h1>Welcome to your site Jane Doe</h1>
+
+		<p class="contact-info">A small gift from <a href="https://arpitbansal.dev">Arpit Bansal</a></p>
 
 	</div>
 
