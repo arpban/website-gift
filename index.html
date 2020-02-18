@@ -40,6 +40,8 @@
 			color: white;
 			background: rgba(0,0,0,0.6);
 			flex-direction: column;
+			left: 0;
+			padding: 20px;
 		}
 
 		h1{
@@ -120,7 +122,8 @@
 	  
 		// 4. The API will call this function when the video player is ready.
 		function onPlayerReady(event) {
-		  event.target.playVideo();
+			// event.target.mute();
+		  	event.target.playVideo();
 		}
 	  </script>
 
